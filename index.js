@@ -1,9 +1,9 @@
 const express = require('express');
 const Datastore = require('nedb');
-const fetch = require('node-fetch');
+
 
 const app = express();
-app.listen(443, () => console.log('listening at 443'));
+app.listen(3000, () => console.log('listening at 3000'));
 app.use(express.static('public'));
 app.use(express.json({ limit: '1mb' }));
 
