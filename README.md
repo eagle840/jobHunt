@@ -11,13 +11,13 @@ Backend is a nodejs program - index.js
 
 Frontend uses std html/css/java/bootstrap
 
-LOCAL
+### LOCAL   
     . node is install
     . clone repo
     . run: npm install # to install required packages
     . run: npm start   #connect browser to port 3000
 
-DOCKER
+### DOCKER   
     - docker build -t jobhunt .
     - image presently comes out as 176MB
     - docker run --rm -d -p 3000:3000 -v $PWD/db:/app/db jobhunt
