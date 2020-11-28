@@ -11,5 +11,6 @@ Backend is a nodejs program - index.js
 Frontend uses std html/css/java/bootstrap
 
 DOCKER
-    - docker run -d -v <local>:<????>
+    - docker build -t jobHunt .
+    - docker run -d -p 3000:3000 jobHunt "$PWD/database.db:/app/database.db
     - browser to localhost:3000

@@ -21,6 +21,7 @@ function setup() {
     const response = await fetch('/api', options);
     const json = await response.json();
     console.log(json);
+    document.getElementById('success').textContent = job_title + " added!"
   });  
 }
 
