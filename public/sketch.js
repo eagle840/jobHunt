@@ -1,5 +1,5 @@
 function setup() {
-  // let lat, lon;
+  
   const button = document.getElementById('submit');
   console.log(button)
   button.addEventListener('click', async event => {
@@ -8,9 +8,7 @@ function setup() {
     const job_title = document.getElementById('mood2').value;
     const approute = document.getElementById('mood3').value;
     const company = document.getElementById('companyname').value;
-    // video.loadPixels();
-    // const image64 = video.canvas.toDataURL();
-    const data = {  company, url, job_title, approute };  // last, lon, image64 removed.
+    const data = {  company, url, job_title, approute };  
     const options = {
       method: 'POST',
       headers: {
