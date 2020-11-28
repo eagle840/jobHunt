@@ -1,10 +1,9 @@
 function setup() {
-  // noCanvas();
-  // const video = createCapture(VIDEO);
-  // video.size(160, 120);
-  let lat, lon;
+  // let lat, lon;
   const button = document.getElementById('submit');
+  console.log(button)
   button.addEventListener('click', async event => {
+    console.log('trying event');
     const url = document.getElementById('url').value;
     const job_title = document.getElementById('mood2').value;
     const approute = document.getElementById('mood3').value;
@@ -22,7 +21,7 @@ function setup() {
     const response = await fetch('/api', options);
     const json = await response.json();
     console.log(json);
-  });
-
-  
+  });  
 }
+
+console.log('js initiated'); 
